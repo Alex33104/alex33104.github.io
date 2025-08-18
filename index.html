@@ -1,1 +1,47 @@
-<h1>portfolio</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homePage.css">
+</head>
+<body>
+    <div class="header">
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
+        <h1>Home Page</h1>
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">
+                <img src="images/profileIcon.png" alt="Profile Icon" width="40" height="40">
+            </button>
+            <div class="dropdown-content" id="dropdown-content">
+                <a href="accountPage.html">Account</a>
+                <a href="progressPage.html">Progress</a>
+                <a href="membershipPage.html">Membership</a>
+                <a href="settingsPage.html">Settings</a>
+                <a href="index.html">Log Out</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <button class="menu-button" onclick="toggleMenu()">Close</button>
+        <br>
+        <br>
+        <a href="#">Competitive</a>
+        <a href="#">Beginners</a>
+        <a href="#">Dry Lands</a>
+        <a href="#">Nutrition</a>
+    </div>
+    <div class="content">
+        <p>Welcome to the home page!</p>
+    </div>
+    <div class="footer-container">
+        <a href="aboutPage.html">About</a>
+        <a href="mailto:apangelinan04@gmail.com">Contact Us</a>
+    </div>
+
+    <script src="homePage.js">
+        
+    </script>
+</body>
+</html>
