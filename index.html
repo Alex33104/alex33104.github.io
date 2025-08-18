@@ -140,7 +140,40 @@
         <a href="mailto:apangelinan04@gmail.com">Contact Us</a>
     </div>
 
-    <script src="homePage.js">
+    <script>
+
+        function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdown-content");
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
+}
+
+// Hide the menu when clicking outside of it
+document.addEventListener('click', function(event) {
+    var menu = document.getElementById("menu");
+    var menuButton = document.querySelector('.menu-button');
+    if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+        menu.style.display = "none";
+    }
+
+    var dropdownContent = document.getElementById("dropdown-content");
+    var dropdownButton = document.querySelector('.dropdown-button');
+    if (!dropdownContent.contains(event.target) && !dropdownButton.contains(event.target)) {
+        dropdownContent.style.display = "none";
+    }
+});
         
     </script>
 </body>
